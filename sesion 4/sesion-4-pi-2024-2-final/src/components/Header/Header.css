@@ -1,0 +1,29 @@
+header {
+  padding: 1rem;
+  background-color: #217c61;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin-right: 2rem;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: large;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
