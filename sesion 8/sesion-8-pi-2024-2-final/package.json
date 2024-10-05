@@ -12,7 +12,11 @@
   "dependencies": {
     "@react-three/drei": "^9.113.0",
     "@react-three/fiber": "^8.17.7",
+<<<<<<< HEAD
     "@react-three/rapier": "^1.5.0",
+=======
+    "@react-three/rapier": "^1.4.0",
+>>>>>>> 8877b8265fe3fd86405fa53e55dfd73996899867
     "@types/three": "^0.168.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
