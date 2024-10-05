@@ -12,7 +12,7 @@ const Controls = () => {
       // Sets the minimum vertical rotation angle (polar) to about 45 degrees from the top
       minPolarAngle={Math.PI * 0.25}
       // Disables zoom functionality (users cannot zoom in or out)
-      enableZoom={false}
+      enableZoom={true}
       // Disables panning functionality (users cannot move the camera horizontally or vertically)
       enablePan={false}
     />
