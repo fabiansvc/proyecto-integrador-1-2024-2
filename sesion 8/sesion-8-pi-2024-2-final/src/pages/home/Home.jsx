@@ -15,7 +15,10 @@ const Home = () => {
     <Canvas shadows camera={cameraSettings}>
       <Controls />
       <Lights />
-      <Physics debug>
+      <Physics
+        debug
+        //gravity={[0, -1, 0]}
+      >
         <Floor name="floor" rotation-x={-Math.PI * 0.5} receiveShadow />
         <Donut
           name="donut"
