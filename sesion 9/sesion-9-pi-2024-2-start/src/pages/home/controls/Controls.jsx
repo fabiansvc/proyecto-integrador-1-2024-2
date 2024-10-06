@@ -7,6 +7,7 @@ const Controls = () => {
       minPolarAngle={Math.PI * 0.25}
       enableZoom={false}
       enablePan={false}
+      target={[0, 5, 0]}
     />
   );
 };

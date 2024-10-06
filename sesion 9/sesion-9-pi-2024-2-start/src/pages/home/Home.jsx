@@ -6,14 +6,15 @@ import Beach from "./world/Beach";
 
 const Home = () => {
   const cameraSettings = {
-    position: [0, 2, 50],
+    position: [-5, 5, 10],
+    fov: 60,
   };
 
   return (
     <Canvas shadows camera={cameraSettings}>
       <Controls />
       <Lights />
-      <Physics debug>
+      <Physics debug={false}>
         <Beach name="beach" receiveShadow />
       </Physics>
     </Canvas>
