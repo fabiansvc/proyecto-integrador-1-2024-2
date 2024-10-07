@@ -29,7 +29,7 @@ const Beach = () => {
           />
         </group>
       </RigidBody>
-      <RigidBody name="rbWaterFloat" colliders="hull" restitution={1.25}>
+      <RigidBody name="rbWaterFloat" colliders="hull" restitution={1.2}>
         <mesh
           name="WaterFloat"
           geometry={nodes.WaterFloat.geometry}
