@@ -5,9 +5,7 @@ const Controls = () => {
     <OrbitControls    
       maxPolarAngle={Math.PI * 0.45}
       minPolarAngle={Math.PI * 0.25}
-      enableZoom={false}
-      enablePan={false}
-      target={[0, 5, 0]}
+      target={[-10, 3, 0]}
     />
   );
 };
