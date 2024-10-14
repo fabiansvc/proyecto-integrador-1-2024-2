@@ -11,6 +11,7 @@ const Beach = () => {
           name="Beach"
           geometry={nodes.Beach.geometry}
           material={materials.BeachMaterial}
+          castShadow
           receiveShadow
         />
       </RigidBody>

@@ -24,18 +24,15 @@ const Staging = () => {
         inclination={0.2} // Adjusts the inclination to simulate the sunset
         azimuth={180} // Adjusts the azimuth angle to change the light direction
         mieCoefficient={0.005} // Adjusts the atmospheric dispersion
-        elevation={5} // Adjusts the sun's elevation
         mieDirectionalG={0.07} // Adjusts the sun's brightness
         rayleigh={3} // Adjusts Rayleigh scattering
         turbidity={10} // Adjusts the sky clarity
-        exposure={0.5} // Adjusts the sky exposure
       />
       <Sparkles
         position={[-15, 10, -10]} // Sets the position of the sparkles
         color="yellow" // Sets the color of the sparkles
         count={256} // Number of sparkles
         size={10} // Size of each sparkle
-        fade={false} // Disables fade effect for the sparkles
         speed={1.5} // Speed of the sparkles' movement
         scale={10} // Scale of the sparkles' spread in the scene
       />
