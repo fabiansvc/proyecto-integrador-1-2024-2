@@ -6,24 +6,28 @@ import Beach from "./world/Beach";
 import Staging from "./staging/Staging";
 import { Loader, PositionalAudio } from "@react-three/drei";
 import { Perf } from "r3f-perf";
-import { Suspense, useCallback, useRef } from "react";
+import { Suspense, useCallback, useRef, useState } from "react";
 import Video from "./world/Video";
 
 const Home = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
   const cameraSettings = {
     position: [0, 15, 15],
   };
 
   const audioRef = useRef(null);
-  
-  const handleSound = useCallback(() => {
-    audioRef.current.play();
-    audioRef.current.setVolume(10);
-  }, []);
+
+  const handlePointerMove = useCallback(()=>{
+    if(isPlaying){
+      audioRef.current?.play();
+      audioRef.current?.setVolume(10);
+    }
+   
+  }, [audioRef, isPlaying])
 
   return (
     <>
-      <Canvas camera={cameraSettings} onClick={handleSound}>
+      <Canvas camera={cameraSettings} onPointerMove={handlePointerMove} >
         <Suspense fallback={null}>
           <Perf position={"top-left"} />
           <Controls />
